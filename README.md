@@ -13,5 +13,8 @@ Overview of the services:
 -	API Gateway: API gateway provides a single endpoint for all requests to the backend services.
 -	RDS database: RDS is used to store structured data like video metadata, comments, playlists and likes. 
 -	S3: S3 bucket is used to store user uploaded and transcoded videos as well as video thumbnail images. It is also utilized for storing static front-end files for edge caching.
+
+
 Microservices Architecture: 
+
 The application is divided into discrete microservices, each handling specific tasks such as user management, backend processing, and transcoding. This design ensures that each service can scale independently, a critical feature for applications that experience fluctuating loads on specific services (e.g., transcoding service might require more resources during high-traffic periods). Microservices also facilitate development, as each service can be developed, deployed, and maintained independently.
