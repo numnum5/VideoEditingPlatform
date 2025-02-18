@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.679.0",
+    "jwt-decode": "^4.0.0"
+  }
+}

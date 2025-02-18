@@ -1,0 +1,52 @@
+services:  
+  # Container for frontend React application
+  frontend:
+    image:
+    ports:
+      - "80:80"  
+    depends_on:
+      - backend 
+    networks:
+      - application
+    restart: always
+  # Container for backend Express application
+  backend:
+    image:
+    ports:
+      - "3000:3000"  # Map port 3000 in the container to port 3000 on the host
+    depends_on:
+      - db  # Ensure db service starts before backend
+    environment:
+      - FRONTEND_API=http://frontend:80  # Internal Docker network URL for frontend
+      - YOUTUBE_APIKEY='YOUR YOUTUBE API KEY'
+      - JWT_SECRET='YOUR SECRET KEY'
+      - DB_HOST=db  # Internal Docker network URL for db
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=root_password
+      - DB_NAME=videos
+    volumes:
+      - uploads:/backend/public/uploads  # Persistent volume for uploads
+    networks:
+      - application
+    restart: always
+
+  # Container for MySQL database
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: videos
+    volumes:
+      - db_data:/var/lib/mysql  # Persistent volume for MySQL data
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql  # Initialize schema
+    networks:
+      - application
+
+networks:
+  application:
+    driver: bridge  # Create a bridge network for service communication
+
+volumes:
+  db_data:  # Define volume for MySQL data
+  uploads:  # Define volume for uploaded files

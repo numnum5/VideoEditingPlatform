@@ -1,0 +1,37 @@
+/* CSS for my videos page */
+.video-container {
+display: grid;
+grid-template-columns: repeat(4, 3fr);
+gap: 10px;
+border: 1px;
+max-width: 100%;
+}
+
+
+.video-item {
+display: 'flex';
+flex-direction: 'column';
+justify-content: 'center';
+align-items: 'center';
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: '0 4px 8px rgba(0, 0, 0, 0.1)';
+height: 'auto'; 
+}
+
+
+.video-item:hover {
+background: #444; 
+border-radius: 5px;
+-webkit-transform: scale(1.01);
+-ms-transform: scale(1.01);
+transform: scale(1.01);
+
+} 
+
+video {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 5px;
+}

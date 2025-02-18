@@ -1,0 +1,32 @@
+.login {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(255, 255, 255);
+position: relative;
+}
+.loginLabel
+{
+color: rgb(0, 0, 0);
+}
+
+.white-text {
+color: rgb(0, 0, 0);
+}
+
+.login form {
+width: 400px;
+border-width: 1px;
+box-shadow: rgba(187, 136, 136, 0.16) 1px 1px 15px;
+padding-top: 30px;
+padding-bottom: 30px;
+border-radius: 8px;
+background-color: rgb(255, 255, 255);
+box-shadow: rgba(187, 136, 136, 0.16) 1px 1px 15px; 
+}
+

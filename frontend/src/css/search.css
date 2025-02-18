@@ -1,0 +1,79 @@
+/* CSS for youtube search page */
+.search-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 16px; /* Space between grid items */
+align-items: stretch;
+}
+
+.search-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #fff;
+justify-content: space-between;
+border: 1px solid #ccc;
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-item img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+.search-item p {
+margin-top: 8px;
+font-size: 14px;
+text-align: center;
+}
+
+
+.video-card {
+
+flex-direction: column;
+align-items: center;
+background: #fff;
+justify-content: space-between;
+border: 1px solid #ccc;
+padding: 5px;
+border-radius: 8px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img {
+width: 100%;
+border-radius: 5px;
+}
+
+.youtube-video-title {
+display: block;
+margin: 10px 0;
+text-decoration: none;
+color: #007bff;
+}
+
+.button-container {
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+}
+
+.save-button, .download-button {
+border: 1px solid #007bff;
+background-color: #fff;
+color: #007bff;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.save-button {
+margin-right: auto; 
+}
+
+.download-button {
+margin-left: auto; 
+}

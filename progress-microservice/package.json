@@ -1,0 +1,19 @@
+{
+  "name": "progress-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.675.0",
+    "@aws-sdk/client-sqs": "^3.679.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.8.1"
+  }
+}

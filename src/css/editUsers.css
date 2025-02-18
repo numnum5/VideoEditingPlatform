@@ -1,0 +1,28 @@
+.user-list{
+    display: flex;
+}
+
+
+.user-item{
+    position: relative; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin: 10px; 
+    margin-right: 5px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+}
+
+.user{
+    position: relative; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin: 10px; 
+    margin-left: 5px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+}

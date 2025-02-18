@@ -1,0 +1,21 @@
+/* CSS for navigation bar */
+.nav a {
+font-size: 10px;
+color: #fff;
+text-decoration: none;
+display: inline-block;
+padding: 10px 15px;
+border-radius: 3px;
+transition: 0.3s ease all;  
+}
+
+.active {
+color: rgb(135, 135, 135);
+}
+
+.nav a:hover {
+background: #444; 
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+} 

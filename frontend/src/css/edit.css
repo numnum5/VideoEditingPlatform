@@ -1,0 +1,102 @@
+.edit {
+display: flex;
+width: 100%; 
+}
+.videoList {
+width: 30%;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 5px;
+padding: 10px;
+border-radius: 10px;
+background-color: #fff; 
+border: 1px solid #dbd4d4;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+height: 510px;
+}
+.scrollsection{
+scrollbar-width: thin; 
+scrollbar-color: #888 #f1f1f1; 
+overflow-y: auto;
+max-height: 400px;
+}
+.custom-select {
+font-size: 14px;
+}
+
+.infoBox #p{
+font-size: 10px;
+}
+.thumbnail{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+padding: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+height: auto;
+cursor: pointer; 
+transition: transform 0.2s ease-in-out;         
+}
+
+
+.thumbnail:hover {
+background: #444;
+transform: scale(1.05);
+}
+
+.options{
+width: 40%;
+padding-left: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 5px;
+}
+.result{
+width: 30%;
+padding-left: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+}
+.custom-form .form-group {
+margin-bottom: 10px; 
+}
+
+.custom-form .row {
+margin-bottom: 10px; 
+}
+
+.custom-form .col-md-6,
+.custom-form .col-md-4,
+.custom-form .col-md-2 {
+padding-left: 5px; 
+padding-right: 5px; 
+}
+
+
+.infoBox {
+display: flex;
+justify-content: space-between;
+border-radius: 5px;
+border-color: #444;
+margin-top: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+}
+
+.infoLeft,
+.infoRight {
+width: 50%;
+}
+
+.infoLeft p,
+.infoRight p {
+margin: 0;
+font-size: 14px;
+padding-bottom: 5px;
+padding-left: 2px;
+}
